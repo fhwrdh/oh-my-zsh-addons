@@ -1,6 +1,6 @@
 # monitors ##################
-alias single='~/work/cnvr/bin/single-monitor-layout.sh'
-alias mirror='~/work/cnvr/bin/mirrored-monitor-layout.sh'
+alias single='~/work/bin/single-monitor-layout.sh'
+alias mirror='~/work/bin/mirrored-monitor-layout.sh'
 
 # git ########################
 alias gs='git status '        # don't really need ghostscript, remap gs
