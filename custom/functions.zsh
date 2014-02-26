@@ -10,7 +10,6 @@ function git_show_change() {
     git show $(git blame ${FILE} -L ${LINE},${LINE} | awk '{print $1}')
 }
 
-# look in busprod101 command history for sudo command to plug in here
 function be() {
-    echo $@
+    sudo -t $@ -H bash login
 }

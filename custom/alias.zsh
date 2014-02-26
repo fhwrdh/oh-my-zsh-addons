@@ -21,3 +21,5 @@ alias sag='sudo apt-get '
 alias mci='mvn clean install'
 alias idea='idea.sh &'
 alias open='gnome-open'
+
+alias cll='clear;ll'
