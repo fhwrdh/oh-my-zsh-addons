@@ -11,5 +11,5 @@ function git_show_change() {
 }
 
 function be() {
-    sudo -t $@ -H bash login
+    sudo -u $@ -H bash login
 }
