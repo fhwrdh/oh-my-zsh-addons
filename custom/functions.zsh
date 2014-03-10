@@ -13,3 +13,7 @@ function git_show_change() {
 function be() {
     sudo -u $@ -H bash login
 }
+function profile() {
+    source ~/.profile
+}
+

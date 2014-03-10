@@ -2,6 +2,10 @@
 alias single='~/work/bin/single-monitor-layout.sh'
 alias mirror='~/work/bin/mirrored-monitor-layout.sh'
 
+# virtualbox #################
+alias dbstart='nohup VBoxHeadless --startvm "Oracle11g32" &> /dev/null &'
+alias dbstop='VBoxManage controlvm Oracle11g32 poweroff'
+
 # git ########################
 alias gs='git status '        # don't really need ghostscript, remap gs
 alias gst='git status '
