@@ -7,7 +7,7 @@ alias dbstart='nohup VBoxHeadless --startvm "Oracle11g32" &> /dev/null &'
 alias dbstop='VBoxManage controlvm Oracle11g32 poweroff'
 
 # git ########################
-alias gs='git status '        # don't really need ghostscript, remap gs
+alias gs='git status -sb'        # don't really need ghostscript, remap gs
 alias gst='git status '
 alias gc='git commit '
 alias gca='git commit -a '
