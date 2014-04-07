@@ -1,4 +1,4 @@
-echo 'path.zsh'
+#echo 'path.zsh'
 typeset -U path
 
 # set PATH so it includes user's private bin if it exists
