@@ -19,6 +19,8 @@ alias glg='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset 
 
 # misc #######################
 alias v='vim '
+alias todo='todo.sh '
+alias t='todo.sh '
 alias e="emacsclient -t -a ''"
 alias irssi='screen irssi '
 alias sag='sudo apt-get '
