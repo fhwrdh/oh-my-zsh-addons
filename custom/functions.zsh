@@ -17,3 +17,6 @@ function profile() {
     source ~/.profile
 }
 
+function web_serve() {
+    python3 -m http.server
+}
