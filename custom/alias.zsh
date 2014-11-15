@@ -1,6 +1,3 @@
-# TEMP
-alias votepasswd='echo "edwglbmwruro"'
-
 # monitors ##################
 alias single='~/work/bin/single-monitor-layout.sh'
 alias mirror='~/work/bin/mirrored-monitor-layout.sh'
@@ -30,9 +27,12 @@ alias e="emacsclient -t -a ''"
 alias irssi='screen irssi '
 alias sag='sudo apt-get '
 alias mci='mvn clean install'
+alias mci8='mvn clean install -Dqunit.numThreads=8'
 #alias idea='idea.sh &'
 alias open='gnome-open'
 alias psg='ps aux | grep '
 alias cll='clear;ll'
 alias k9='kill -9'
 alias gk='gitk &'
+
+alias watch-member='nodemon -w src/main/webapp/ -e html,htm,js,css,jsp,jsx,coffee -x `which copyWebResourcesMember`'
