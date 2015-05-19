@@ -30,3 +30,7 @@ function web_serve() {
     echo "try here: http://localhost:8000"
     python3 -m http.server
 }
+
+function fn() {
+    find . -name $1
+}
