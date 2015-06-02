@@ -32,5 +32,5 @@ function web_serve() {
 }
 
 function fn() {
-    find . -name $1
+    find . -name "$1"
 }

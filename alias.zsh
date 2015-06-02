@@ -3,6 +3,8 @@ alias single='~/work/bin/single-monitor-layout.sh'
 alias mirror='~/work/bin/mirrored-monitor-layout.sh'
 alias laptopplus='~/work/bin/plus-one-monitor-layout.sh'
 alias stacked='~/work/bin/home-monitor-layout.sh'
+alias left='single && laptopplus'
+alias right='single && mirror'
 
 # virtualbox #################
 alias dbstart='nohup VBoxHeadless --startvm "Oracle11g32" &> /dev/null &'
@@ -23,18 +25,17 @@ alias glg='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset 
 # misc #######################
 alias v='vim '
 alias todo='todo.sh '
-#alias t='todo.sh '
 alias e="emacsclient -t -a ''"
-#alias irssi='screen irssi '
 alias sag='sudo apt-get '
 alias mci='mvn clean install'
 alias mci8='mvn clean install -Dqunit.numThreads=8'
-#alias idea='idea.sh &'
+alias qb='mvn clean install -T 1C -Ddelta.skip=true -Dcleanup.skip=true -Dqunit.numThreads=8 -DskipTests -Dtablespaces.skip=true -Dgulp.task=min'
+alias startMongo="~/work/software/mongodb/2.4.10/bin/mongod --dbpath /tmp --fork --logpath /tmp/mongo.log"
+
 alias open='gnome-open'
 alias psg='ps aux | grep '
 alias cll='clear;ll'
 alias k9='kill -9'
 alias gk='gitk &'
-#alias watch-member='nodemon -w src/main/webapp/ -e html,htm,js,css,jsp,jsx,coffee -x `which copyWebResourcesMember`'
 alias ts='~/work/bin/terminal-server.sh &'
 
