@@ -15,22 +15,31 @@ alias gs='git status -sb'        # don't really need ghostscript, remap gs
 alias gst='git status '
 alias gc='git commit '
 alias gca='git commit -a '
+alias gcam='git commit -am '
 alias ga='git add '
 alias gaa='git add --all '
 alias gco='git checkout '
 alias gb='git branch '
 alias gm='git merge '
-alias glg='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
+alias ggg='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 
 # misc #######################
 alias v='vim '
+alias vi='vim '
 alias todo='todo.sh '
 alias e="emacsclient -t -a ''"
 alias sag='sudo apt-get '
-alias mci='mvn clean install'
-alias mci8='mvn clean install -Dqunit.numThreads=8'
+
+alias deps='mvn clean install -Pdeps -DskipTests=true -Dcleanup.skip=true -Ddelta.skip=true -Dtablespaces.skip=true'
+alias mci='mvn clean install '
+alias mci8='mvn clean install -Dqunit.numThreads=8 '
 alias qb='mvn clean install -T 1C -Ddelta.skip=true -Dcleanup.skip=true -Dqunit.numThreads=8 -DskipTests -Dtablespaces.skip=true -Dgulp.task=min'
+alias qa='mvn qunit:test -Dqunit.numThreads=8'
+alias qs='mvn qunit:serve'
+
 alias startMongo="~/work/software/mongodb/2.4.10/bin/mongod --dbpath /tmp --fork --logpath /tmp/mongo.log"
+alias gw='scripts/gulp watch'
+alias gw2='scripts/gulp watch2'
 
 alias open='gnome-open'
 alias psg='ps aux | grep '
