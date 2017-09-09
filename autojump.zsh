@@ -1,1 +1,1 @@
-source /usr/share/autojump/autojump.zsh
+#source /usr/share/autojump/autojump.zsh

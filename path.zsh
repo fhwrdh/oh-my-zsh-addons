@@ -14,4 +14,4 @@ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/ga
 export PATH=/home/fhenderson/work/software/bin:$PATH
 export PATH=/home/fhenderson/work/software/java/1.8.0/bin:$PATH
 
-export PATH=/home/fhenderson/.linuxbrew/bin:$PATH
+export PATH=$PATH:/Applications/Racket\ v6.8/bin

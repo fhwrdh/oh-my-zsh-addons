@@ -34,3 +34,11 @@ function web_serve() {
 function fn() {
     find . -name "$1"
 }
+
+function qaa() {
+    mvn qunit:test -Dqunit.numThreads=8 "$1" 2>&1 | grep -v "^Unsafe" | grep -v "^$"
+}
+
+function jsc() {
+    find . -type f -iregex ".*\.js$" -not -path "./node_modules/*" -exec jsctags {} -f \; | sed '/^$/d' | LANG=C sort > tags
+}
