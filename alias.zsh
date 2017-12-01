@@ -23,9 +23,13 @@ alias gu='git up'
 # misc #######################
 alias v='vim'
 alias vi='vim '
+alias n='nvim'
 alias todo='todo.sh '
 alias e="emacsclient -t -a ''"
 alias sag='sudo apt-get '
+
+alias fmln="rm -rf node_modules && npm i"
+alias fmly="rm -rf node_modules && yarn"
 
 alias deps='mvn clean install -Pdeps -DskipTests=true -Dcleanup.skip=true -Ddelta.skip=true -Dtablespaces.skip=true'
 alias mci='mvn clean install '
@@ -35,8 +39,6 @@ alias qqb='mvn clean install -T 1C -Ddelta.skip=true -Dcleanup.skip=true -Dqunit
 alias qa='mvn qunit:test -Dqunit.numThreads=8 '
 alias qs='mvn qunit:serve'
 alias build_content='cd ../content && qb && cd -'
-
-alias startMongo="~/work/software/mongodb/2.4.10/bin/mongod --dbpath /tmp --fork --logpath /tmp/mongo.log"
 
 alias psg='ps aux | grep '
 alias cll='clear;ll'

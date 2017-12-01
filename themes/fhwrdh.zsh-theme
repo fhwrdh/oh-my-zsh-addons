@@ -6,7 +6,7 @@ if [ $UID -eq 0 ]; then CARETCOLOR="red"; else CARETCOLOR="blue"; fi
 #»%{${reset_color}%} '
 
 # short + beer
-PROMPT='%{$reset_color%}%{${fg[green]}%}%5~ $(git_super_status)%{${fg_bold[$CARETCOLOR]}%}
+PROMPT='$FG[240][%m]%{$reset_color%}%{${fg[green]}%} %5~ $(git_super_status)%{${fg_bold[$CARETCOLOR]}%}
 %{${fg_bold[blue]}%}⦿%{${reset_color}%} '
 
 # RPS1="${return_code}"
