@@ -28,7 +28,7 @@ alias todo='todo.sh '
 alias e="emacsclient -t -a ''"
 alias sag='sudo apt-get '
 
-alias fmln="rm -rf node_modules && npm i"
+alias fmln="rm -rf node_modules/ && rm -f package-lock.json && npm install"
 alias fmly="rm -rf node_modules && yarn"
 
 alias deps='mvn clean install -Pdeps -DskipTests=true -Dcleanup.skip=true -Ddelta.skip=true -Dtablespaces.skip=true'
@@ -44,8 +44,6 @@ alias psg='ps aux | grep '
 alias cll='clear;ll'
 alias k9='kill -9'
 alias gk='gitk &'
-
-alias vpn="~/work/bin/osx-vpn.sh"
 
 # apps #####################
 alias canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
