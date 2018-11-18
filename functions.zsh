@@ -22,6 +22,7 @@ function git_prompt_info() {
 function be() {
     sudo -u $@ -H bash login
 }
+
 function profile() {
     source ~/.profile
 }
@@ -42,3 +43,9 @@ function qaa() {
 function jsc() {
     find . -type f -iregex ".*\.js$" -not -path "./node_modules/*" -exec jsctags {} -f \; | sed '/^$/d' | LANG=C sort > tags
 }
+
+# https://twitter.com/wesbos/status/601426471240998912
+function tt() {
+ tree -I '.git|node_modules|bower_components|.DS_Store' --dirsfirst --filelimit 15 -L ${1:-3} -aC $2
+}
+
