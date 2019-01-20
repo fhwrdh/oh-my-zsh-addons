@@ -5,6 +5,5 @@ Installation
 ------------
 ```
 git clone git@github.com:fhwrdh/oh-my-zsh-addons.git
-ln -s oh-my-zsh-addons/themes/* ~/.oh-my-zsh/themes/
-ln -s oh-my-zsh-addons/custom/* ~/.oh-my-zsh/custom/
-
+ln -s ${PWD}/oh-my-zsh-addons/{alias,autojump,history,functions,path}.zsh "$ZSH_CUSTOM"
+ln -s ${PWD}/oh-my-zsh-addons/themes/fhwrdh.zsh-theme "$ZSH_CUSTOM/themes"
