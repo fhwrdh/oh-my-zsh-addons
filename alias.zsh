@@ -31,9 +31,13 @@ alias sag='sudo apt-get '
 
 alias fmln="rm -rf node_modules/ && rm -f package-lock.json && npm install"
 alias fmly="rm -rf node_modules && rm -rf yarn.log && yarn"
+alias nrt="npm run test"
+alias nrs="npm run start"
+alias nrb="npm run build"
 alias yrt="yarn run test"
 alias yrs="yarn run start"
 alias yrb="yarn run build"
+
 
 alias deps='mvn clean install -Pdeps -DskipTests=true -Dcleanup.skip=true -Ddelta.skip=true -Dtablespaces.skip=true'
 alias mci='mvn clean install '
