@@ -30,7 +30,7 @@ alias e="emacsclient -t -a ''"
 alias sag='sudo apt-get '
 
 alias fmln="rm -rf node_modules/ && rm -f package-lock.json && npm install"
-alias fmly="rm -rf node_modules && rm -rf yarn.log && yarn"
+alias fmly="rm -rf node_modules && rm -rf yarn.lock && yarn"
 alias nrt="npm run test"
 alias nrs="npm run start"
 alias nrb="npm run build"
