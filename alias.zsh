@@ -24,6 +24,9 @@ alias gu='git up'
 # misc #######################
 alias v='vim'
 alias vi='vim '
+alias vd="vim \$(git diff HEAD --name-only --diff-filter=ACMR)"
+alias vds="vim \$(git diff --staged --name-only --diff-filter=ACMR)"
+alias vdc="vim \$(git diff HEAD^ --name-only --diff-filter=ACMR)"
 alias n='nvim'
 alias todo='todo.sh '
 alias e="emacsclient -t -a ''"
