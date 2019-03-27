@@ -4,11 +4,13 @@ alias dbstop='VBoxManage controlvm Oracle11g32 poweroff'
 
 # git ########################
 alias ga='git add '
+alias gai='git add '
 alias gaa='git add --all '
 alias gb='git branch '
 alias gc='git commit '
 alias gca='git commit -a '
 alias gcam='git commit -am '
+alias gcma='git commit -am '
 alias gcm='git commit -m '
 alias gco='git checkout '
 alias ggg='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
@@ -17,7 +19,10 @@ alias gls='git log --stat'
 alias gm='git merge '
 alias grhh='git reset --hard HEAD'
 alias gri='git rebase -i'
-alias gs='git status -sb'        # don't really need ghostscript, remap gs
+alias gs='git status -sb'
+alias gsa='git stash apply'
+alias gsl='git stash list'
+alias gsp='git stash pop'
 alias gst='git status '
 alias gu='git up'
 
@@ -34,14 +39,14 @@ alias sag='sudo apt-get '
 
 alias fmln="rm -rf node_modules/ && rm -f package-lock.json && npm install"
 alias fmly="rm -rf node_modules && rm -rf yarn.lock && yarn"
-alias nrt="npm run test"
-alias nrs="npm run start"
 alias nrb="npm run build"
-alias yrt="yarn run test"
-alias yrs="yarn run start"
+alias nrs="npm run start"
+alias nrt="npm run test"
 alias yrb="yarn run build"
+alias yrs="yarn run start"
+alias yrt="yarn run test"
 
-
+# CJ #####################
 alias deps='mvn clean install -Pdeps -DskipTests=true -Dcleanup.skip=true -Ddelta.skip=true -Dtablespaces.skip=true'
 alias mci='mvn clean install '
 alias mci8='mvn clean install -Dqunit.numThreads=8 '
@@ -54,7 +59,6 @@ alias build_content='cd ../content && qb && cd -'
 alias psg='ps aux | grep '
 alias cll='clear;ll'
 alias k9='kill -9'
-alias gk='gitk &'
 
 # apps #####################
 alias canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
