@@ -39,6 +39,7 @@ alias sag='sudo apt-get '
 
 alias fmln="rm -rf node_modules/ && rm -f package-lock.json && npm install"
 alias fmly="rm -rf node_modules && rm -rf yarn.lock && yarn"
+alias no="npm outdated"
 alias nrb="npm run build"
 alias nrs="npm run start"
 alias nrt="npm run test"
