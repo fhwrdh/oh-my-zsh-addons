@@ -2,7 +2,8 @@
 alias dbstart='nohup VBoxHeadless --startvm "Oracle11g32" &> /dev/null &'
 alias dbstop='VBoxManage controlvm Oracle11g32 poweroff'
 
-# git ########################
+# git/hub ####################
+alias browse='hub browse'
 alias ga='git add '
 alias gai='git add '
 alias gaa='git add --all '
@@ -19,6 +20,7 @@ alias gls='git log --stat'
 alias gm='git merge '
 alias grhh='git reset --hard HEAD'
 alias gri='git rebase -i'
+alias grv='git remote -v'
 alias gs='git status -sb'
 alias gsa='git stash apply'
 alias gsl='git stash list'
